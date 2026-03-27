@@ -1,0 +1,34 @@
+[
+  {
+    "unidad_id": "G-102",
+    "ruta_id": "R01",
+    "lat": 18.455,
+    "lng": -69.931,
+    "sentido": "Norte-Sur",
+    "ultima_actualizacion": "14:30:05",
+    "ocupacion": "Media"
+  },
+  {
+    "unidad_id": "G-205",
+    "ruta_id": "R02",
+    "lat": 18.471,
+    "lng": -69.952,
+    "sentido": "Sur-Norte",
+    "ultima_actualizacion": "14:31:12",
+    "ocupacion": "Baja"
+  },
+  {
+    "unidad_id": "BUS-C01",
+    "ruta_id": "R01",
+    "lat": 18.468,
+    "lng": -69.94,
+    "estado": "en ruta"
+  },
+  {
+    "unidad_id": "OMSA-E10",
+    "ruta_id": "R04",
+    "lat": 18.455,
+    "lng": -69.952,
+    "estado": "carga baja"
+  }
+]

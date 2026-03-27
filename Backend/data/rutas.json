@@ -1,0 +1,183 @@
+[
+  {
+    "id": "R001",
+    "nombre": "Corredor Churchill",
+    "operador": "Mochotran",
+    "color": "#0055aa",
+    "tipo": "Autobús",
+    "tarifa": 35.00,
+    "horario": "06:00 - 22:30"
+  },
+  {
+    "id": "R002",
+    "nombre": "Corredor Núñez de Cáceres",
+    "operador": "OMSA",
+    "color": "#2ecc71",
+    "tipo": "Autobús",
+    "tarifa": 35.00,
+    "horario": "06:00 - 22:00"
+  },
+  {
+    "id": "C-109",
+    "nombre": "Ruta C-109 (Valiente)",
+    "operador": "ADECASVAZA",
+    "color": "#f26522",
+    "tipo": "carro",
+    "tarifa": 50.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-83",
+    "nombre": "Ruta C-83 (Sertransmella)",
+    "operador": "SERTRANSMELLA",
+    "color": "#045a79",
+    "tipo": "carro",
+    "tarifa": 40.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "M-28",
+    "nombre": "Ruta M-28 (Microbus)",
+    "operador": "APROCHOVIMG",
+    "color": "#1abc9c",
+    "tipo": "autobus",
+    "tarifa": 50.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-99B",
+    "nombre": "Ruta C-99 B",
+    "operador": "COMTRASOLZA",
+    "color": "#f26522",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-30",
+    "nombre": "Ruta C-30 (Aut. San Isidro)",
+    "operador": "ASOCHOASI",
+    "color": "#e74c3c",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-4",
+    "nombre": "Ruta C-4 (Buenos Aires-Km9)",
+    "operador": "ASOCHOBA",
+    "color": "#34495e",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-5",
+    "nombre": "Ruta C-5 (Bolivar-Indep.)",
+    "operador": "COMTRABOIN",
+    "color": "#045a79",
+    "tipo": "carro",
+    "tarifa": 50.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-25",
+    "nombre": "Ruta C-25 (25 de Febrero)",
+    "operador": "ASOCHOCAFBERO",
+    "color": "#2ecc71",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-64",
+    "nombre": "Ruta C-64 (Isabelita-Farallones)",
+    "operador": "ASOCHOCAIFA",
+    "color": "#9b59b6",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-1",
+    "nombre": "Ruta C-1 (Av. Independencia)",
+    "operador": "ASOCHOCAINDE",
+    "color": "#e67e22",
+    "tipo": "carro",
+    "tarifa": 40.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-2",
+    "nombre": "Ruta C-2 (Av. Independencia)",
+    "operador": "ASOCHOCAINDE",
+    "color": "#e67e22",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "M-104",
+    "nombre": "Ruta M-104 (Campo Lindo)",
+    "operador": "ASOCHOCAMPOLINDO",
+    "color": "#3498db",
+    "tipo": "autobus",
+    "tarifa": 100.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "M-98",
+    "nombre": "Ruta M-98 (Campo Lindo)",
+    "operador": "ASOCHOCAMPOLINDO",
+    "color": "#3498db",
+    "tipo": "autobus",
+    "tarifa": 100.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-7",
+    "nombre": "Ruta C-7 (Ovando-V. Mella)",
+    "operador": "ASOCHOCAOVIC",
+    "color": "#045a79",
+    "tipo": "carro",
+    "tarifa": 40.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-80",
+    "nombre": "Ruta C-80",
+    "operador": "ASOCHOCIA",
+    "color": "#f1c40f",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "M-16B",
+    "nombre": "Ruta M-16B (Villa Faro)",
+    "operador": "ASOCHOCOPROVIM",
+    "color": "#045a79",
+    "tipo": "autobus",
+    "tarifa": 40.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-32",
+    "nombre": "Ruta C-32",
+    "operador": "ASOCHOCRUSA",
+    "color": "#2c3e50",
+    "tipo": "carro",
+    "tarifa": 40.00,
+    "horario": "05:30 - 22:30"
+  },
+  {
+    "id": "C-47",
+    "nombre": "Ruta C-47",
+    "operador": "SERTRAVIME",
+    "color": "#045a79",
+    "tipo": "carro",
+    "tarifa": 35.00,
+    "horario": "05:30 - 22:30"
+  }
+]
+

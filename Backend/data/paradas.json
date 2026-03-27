@@ -1,0 +1,73 @@
+[
+  {
+    "id": "P001",
+    "ruta_id": "R001",
+    "nombre": "Centro de los Héroes",
+    "lat": 18.4485,
+    "lng": -69.9258,
+    "tipo": "motor",
+    "referencia": "Estación Metro Jiménez Moya"
+  },
+  {
+    "id": "P002",
+    "ruta_id": "R001",
+    "nombre": "Churchill con 27 de Febrero",
+    "lat": 18.4632,
+    "lng": -69.9395,
+    "tipo": "motor",
+    "referencia": "Frente a Plaza Central"
+  },
+  {
+    "id": "P003",
+    "ruta_id": "R001",
+    "nombre": "27 de Febrero con Lincoln",
+    "tipo": "OMSA",
+    "lat": 18.4600,
+    "lng": -69.9300
+  },
+  {
+    "id": "P004",
+    "ruta_id": "R001",
+    "nombre": "27 de Febrero con Máximo Gómez",
+    "tipo": "OMSA",
+    "lat": 18.4700,
+    "lng": -69.9200
+  },
+  {
+    "id": "R005",
+    "nombre": "Corredor Churchill",
+    "operador": "Mochotran",
+    "color": "#0055aa",
+    "tipo": "autobus",
+    "tarifa": 35.00,
+    "horario": "05:00 - 11:00 PM"
+  },
+  {
+    "id": "R006",
+    "nombre": "Corredor 27 de Febrero",
+    "operador": "OMSA",
+    "color": "#2ecc71",
+    "tipo": "OMSA",
+    "tarifa": 15.00,
+    "horario": "06:00 - 10:00 PM"
+  },
+  {
+    "id": "R007",
+    "nombre": "Corredor Independencia",
+    "operador": "Público-Privado",
+    "color": "#e74c3c",
+    "tipo": "autobus",
+    "tarifa": 35.00,
+    "horario": "05:30 - 10:30 PM"
+  },
+  {
+    "id": "R008",
+    "nombre": "Corredor Núñez de Cáceres",
+    "operador": "OMSA / Eléctrico",
+    "color": "#1abc9c",
+    "tipo": "OMSA",
+    "tarifa": 35.00,
+    "horario": "06:00 - 11:00 PM"
+  }
+  
+]

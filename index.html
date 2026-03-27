@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guagua Time RD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-menu">
+        <ul>
+          <li class="nav-link"><a href="#">Inicio</a></li>
+
+          <li class="nav-link">
+            <a href="Frontend/pages/servicios.html"> Servicios</a>
+          </li>
+          <li class="nav-link">
+            <a href="Frontend/pages/aboutme.html"> Sobre nosotros</a>
+          </li>
+          <li class="nav-link">
+            <a href="Frontend/pages/transporte.html"> Transporte</a>
+          </li>
+          <li class="nav-link">
+            <a href="Frontend/pages/galeria.html"> Galeria</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Guagua Time RD</h1>
+      <p>Simulador de rutas y costos del transporte publico</p>
+    </header>
+
+    <main>
+      <section id="search">
+        <article id="busqueda">
+          <div class="search-container">
+            <input
+              class="input-search"
+              type="search"
+              name="buscar"
+              id="buscar"
+              placeholder="¿A dónde vas?"
+            />
+            <!-- Contenedor para las sugerencias -->
+            <div id="sugerencias-lista" class="sugerencias-hidden"></div>
+            <button class="btn-search" id="btn-search">Buscar</button>
+          </div>
+
+          <div id="resultado" class="card">
+            <h2 id="resNombreParada">---</h2>
+            <p><strong>Ruta:</strong> <span id="resRuta">---</span></p>
+            <p>
+              <strong>Referencia:</strong> <small id="resReferencia">---</small>
+            </p>
+            <p id="resUnidad"><span class="badge">Buscando unidad...</span></p>
+          </div>
+        </article>
+
+        <article class="mapa">
+          <svg id="mini-map" role="img">
+            <title>mini-map nacional</title>
+          </svg>
+        </article>
+      </section>
+
+      <section id="rutas">
+        <h3>Rutas</h3><br>
+
+        <label for="origen">Origen</label>
+        <input type="search" name="origen" id="origen" />
+
+        <!-- Botón para invertir -->
+        <button type="button" id="btn-invertir" title="Invertir ruta">
+          ⇅ Invertir
+        </button>
+
+        <label for="destino">Destino</label>
+        <input type="search" name="destino" id="destino" />
+
+        <div class="select-opcion">
+          <label for="motor">Motor</label>
+          <input type="checkbox" name="motor" id="motor" />
+
+          <label for="carro">Carro</label>
+          <input type="checkbox" name="carro" id="carro" />
+
+          <label for="autobus">Autobus</label>
+          <input type="checkbox" name="autobus" id="autobus" />
+
+          <label for="OMSA">OMSA</label>
+          <input type="checkbox" name="OMSA" id="OMSA" />
+        </div>
+
+        <aside id="ruta">
+          <div class="map-header">
+            <h4>Visualización del Trayecto</h4>
+          </div>
+          <!-- El SVG será nuestro lienzo -->
+          <svg id="ruta-svg" viewBox="0 0 400 150" xmlns="http://www.w3.org">
+            <!-- Fondo de la línea -->
+            <line
+              x1="50"
+              y1="75"
+              x2="350"
+              y2="75"
+              stroke="#ddd"
+              stroke-width="6"
+              stroke-linecap="round"
+            />
+            <circle cx="50" cy="75" r="8" fill="#ddd" id="punto-origen" />
+            <circle cx="350" cy="75" r="8" fill="#ddd" id="punto-destino" />
+            <text
+              x="50"
+              y="110"
+              font-size="12"
+              text-anchor="middle"
+              fill="#999"
+            >
+              Origen
+            </text>
+            <text
+              x="350"
+              y="110"
+              font-size="12"
+              text-anchor="middle"
+              fill="#999"
+            >
+              Destino
+            </text>
+          </svg>
+        </aside>
+      </section>
+
+      <section id="paradas">
+        <h3>Paradas</h3>
+      </section>
+
+      <section id="contacto">
+        <h3>Contacto</h3>
+
+        <form action="contacto.php">
+          <label for="name">Nombre completo</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">Correo Electronico</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="telefono">Telefono / Celular</label>
+          <input type="tel" name="telefono" id="telefono" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Escribir tu mensaje aqui"
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h6>Guagua Time RD</h6>
+      <p>@GuaguaTimeRD. Todos los derechos reservados</p>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

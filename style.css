@@ -1,0 +1,441 @@
+:root {
+  --azul-intrant: #045a79;
+  --naranja-intrant: #f26522;
+  --blanco-fondo: #ffffff;
+  --gris-suave: #f4f4f4;
+  --amarillo-vial: #eac102;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: var(--gris-suave);
+  color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: var(--azul-intrant);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link a:hover {
+  color: var(--naranja-intrant);
+}
+
+.search-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search {
+  height: 35px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.btn-search {
+  background-color: var(--naranja-intrant);
+  color: white;
+  border: none;
+}
+
+.badge {
+  background-color: var(--amarillo-vial);
+  color: #333;
+}
+
+section {
+  background: var(--blanco-fondo);
+  margin: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-top: 5px solid var(--azul-intrant);
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-search {
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    transform 0.2s,
+    background 0.3s;
+}
+
+.btn-search:hover {
+  background-color: #d1561d; /* Un naranja un poco más oscuro */
+  transform: translateY(-2px);
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--azul-intrant); /* Hace que los checks sean azules */
+}
+
+/* Estilo para resaltar la coincidencia mientras escribes */
+#buscar:focus {
+  border: 2px solid var(--naranja-intrant);
+  outline: none;
+  box-shadow: 0 0 10px rgba(242, 101, 34, 0.2);
+}
+
+.search-container {
+  position: relative; /* Para que la lista se posicione respecto al input */
+  width: 100%;
+}
+
+#sugerencias-lista {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.sugerencia-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+  text-align: left;
+}
+
+.sugerencia-item:hover {
+  background-color: var(--gris-suave);
+  color: var(--azul-intrant);
+}
+
+.sugerencia-item strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.sugerencia-item small {
+  color: #777;
+}
+
+.sugerencias-hidden {
+  display: none;
+}
+
+.select-opcion {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin: 0;
+}
+
+.map-header {
+  color: var(--azul-intrant);
+  margin-top: 0;
+}
+
+.ruta p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.ruta-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-left: 5px solid var(--azul-intrant);
+}
+
+.costo-viaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--naranja-intrant);
+}
+
+.error-msg {
+  color: #cc0000;
+  font-weight: bold;
+  text-align: center;
+}
+
+#btn-invertir {
+  background: var(--gris-suave);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--azul-intrant);
+  transition: all 0.2s;
+}
+
+#btn-invertir:hover {
+  background-color: var(--azul-intrant);
+  color: white;
+  transform: scale(1.05);
+}
+
+#btn-invertir:active {
+  transform: scale(0.95);
+}
+
+/* Contenedor principal de la sección de contacto */
+#contacto {
+  background-color: var(--blanco-fondo);
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos o etiquetas */
+#contacto label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--azul-intrant);
+  font-size: 0.9rem;
+}
+
+/* Estilo para todos los inputs y el textarea */
+#contacto input,
+#contacto textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box; /* Asegura que el padding no ensanche el input */
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Efecto al hacer clic (focus) */
+#contacto input:focus,
+#contacto textarea:focus {
+  outline: none;
+  border-color: var(--azul-intrant);
+  box-shadow: 0 0 0 3px rgba(4, 90, 121, 0.1);
+}
+
+/* Ajuste específico para el área de mensaje */
+#contacto textarea {
+  resize: vertical; /* Permite estirar hacia abajo pero no hacia los lados */
+  min-height: 120px;
+}
+
+/* Botón de envío */
+#contacto button[type="submit"] {
+  width: 100%;
+  background-color: var(--naranja-intrant);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+#contacto button[type="submit"]:hover {
+  background-color: #d1561d;
+  transform: translateY(-2px);
+}
+
+#contacto button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Placeholder más discreto */
+::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+  #contacto {
+    margin: 20px;
+    padding: 25px 15px;
+  }
+}
+
+h3 {
+  color: var(--azul-intrant);
+  border-bottom: 3px solid var(--naranja-intrant);
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* Contenedor de las tarjetas que llenaremos con JS */
+.paradas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.parada-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid #ddd; /* Color por defecto */
+  transition: transform 0.2s;
+}
+
+.parada-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.parada-card h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.parada-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.parada-tipo {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#ruta {
+  margin-top: 5px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+#ruta-svg {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Animación para que la línea "crezca" al buscar */
+.linea-animada {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dash 1.5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.parada-nodo {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.parada-nodo:hover circle {
+  r: 10;
+  opacity: 1;
+}
+
+/* Estilo para la línea que se dibuja sola */
+.linea-animada {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: escribirLinea 2s ease-out forwards;
+}
+
+@keyframes escribirLinea {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.ruta-detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 10px;
+  background: #fdfdfd;
+  border-radius: 5px;
+}
+
+.ruta-detalle p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Animación de pulso para el tiempo estimado */
+.ruta-detalle strong {
+  color: var(--azul-intrant);
+}
+
+/* Nota de precaución sobre el tráfico */
+.ruta-card::after {
+  content: "⚠️ El tiempo puede variar según el tráfico.";
+  display: block;
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
+}
